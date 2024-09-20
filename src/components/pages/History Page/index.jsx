@@ -4,6 +4,8 @@ import './index.css'
 
 export default function History() {
   return (
-    <div>History</div>
+    <div className='container'>
+      <h1>Hello</h1>
+    </div>
   )
 }

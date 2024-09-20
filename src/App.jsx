@@ -5,6 +5,7 @@ import HomePage from "./components/pages/Home Page";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Members from "./components/pages/Members Page";
 import History from "./components/pages/History Page";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <Route path="/history" element={<History />}/>
           <Route path="*" element={<HomePage />}/>
         </Routes>
-      
+      <Footer />
     </>
   );
 }

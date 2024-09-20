@@ -3,6 +3,7 @@ import "./index.css";
 import BretHart from "/Wrestlers/BretHart-Transperant.bmp";
 import OwenHart from "/Wrestlers/OwenHart-Transparent.webp";
 import NeidHart from "/Wrestlers/JimNeidHart-Transperant.png";
+import DaveyBoy from "/Wrestlers/DaveyBoy-Transperant.bmp";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Wrestler from "../../Wrestlers";
@@ -17,7 +18,7 @@ export default function Members() {
 
   return (
     <main className="container flex-container flow flex">
-      <div class="tab-list underline-indicators flex">
+      {/* <div class="tab-list underline-indicators flex">
           <Link
             aria-selected="true"
             class="uppercase ff-sans-cond text-accent bg-dark letter-spacing-2"
@@ -36,11 +37,12 @@ export default function Members() {
           >
             Jim Neidhart
           </Link>
-        </div>
+        </div> */}
 
       <Wrestler mainImage={BretHart} name="Bret Hart" nickname="The Hitman"/>
       <Wrestler mainImage={OwenHart} name="Owen Hart" nickname="The King of Harts"/>
       <Wrestler mainImage={NeidHart} name="Jim Neidhart" nickname="The Anvil"/>
+      <Wrestler mainImage={DaveyBoy} name="Davey Boy Smith" nickname="British Bulldog"/>
       
     </main>
   );
