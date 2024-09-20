@@ -1,0 +1,96 @@
+
+.flex-centered {
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.img-border {
+    justify-content: center;
+}
+
+.centered {
+    text-align: center;
+    color: blueviolet;
+}
+
+
+.tab-list {
+  justify-content: center;
+  /* text-align: center; */
+    --gap: 6rem;
+    color: aqua;
+  }
+
+  .tab-list a {
+    background-color: black;
+    font-size: var(--fs-500);
+    text-decoration: none;
+    /* text-underline-offset: 2rem; */
+  }
+
+.centerpiece {
+  flex-direction: column;
+  align-items: center;
+}
+
+.centerpiece p {
+  margin-top: 2rem;
+}
+
+
+.destination-meta {
+  flex-direction: column;
+  border-top: 1px solid rgba(102, 51, 153, 0.5);
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.destination-meta p {
+  font-size: 1.75rem;
+}
+
+.mainImage {
+  width: 80%;
+}
+
+@media (min-width:35rem) {
+
+  .numbered-title {
+    margin-top: 2rem;
+  }
+
+  .destination-meta {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+
+@media (min-width: 56rem) {
+
+  .flex-centered {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .infomatic {
+    max-width: 45%;
+  }
+
+  .tab-list {
+    justify-content: left;
+    --gap: 6rem;
+  }
+
+  .wrestler-info p {
+    text-align: justify;
+    line-height: 1.7;
+  }
+
+  .destination-meta p {
+    text-align: center;
+  }
+}

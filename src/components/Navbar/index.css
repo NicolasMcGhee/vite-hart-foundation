@@ -1,0 +1,133 @@
+.primary-header {
+  margin: 0 auto;
+  justify-content: space-between;
+  /*95rem = 1520px / 90 rem = 1440px*/
+  max-width: 95rem;
+}
+
+.img-container {
+  /* margin: 0 1rem; */
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.primary-navigation {
+  --gap: clamp(1.5rem, 5vw, 3.5rem);
+  --underline-gap: 2rem;
+  list-style-type: none;
+  padding: 0rem 3rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  background: rgba(var(--clr-white), 0.1);
+  backdrop-filter: blur(1rem);
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+  display: flex;
+}
+
+.primary-navigation a > span {
+  font-weight: 700;
+  margin-right: 0.5em;
+}
+
+@media (max-width: 35rem) {
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 2000;
+    right: 1rem;
+    top: 1rem;
+    background: transparent;
+    border: 0;
+
+    width: 2.5rem;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+  }
+
+  .mobile-close-icon {
+    background-image: url(../../../public/vite.svg);
+    opacity: 0.5;
+  }
+
+  .mobile-open-icon {
+    background-image: url(../../../public/vite.svg);
+  }
+
+  .primary-navigation {
+    --gap: 2rem;
+    --underline-gap: 0.5rem;
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 20%;
+    list-style-type: none;
+    padding: min(20rem, 15vh) 2rem;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .not-visible {
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
+  }
+  .visible {
+    transform: translateX(0%);
+    transition: transform 500ms ease-in-out;
+  }
+  .primary-navigation.underline-indicators > .active {
+    border: 0;
+  }
+}
+
+@media (min-width: 35rem) and (max-width: 56rem) {
+  .primary-navigation {
+    padding-inline: 3rem;
+  }
+
+  .primary-navigation a > span {
+    display: none;
+  }
+}
+
+@media (min-width: 56rem) {
+
+  .primary-header::after {
+    content: '';
+    background-color: rebeccapurple;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    left: 1rem;
+    top: 5.5rem;
+    order: 1;
+    /* margin-right: -2.5rem; */
+  }
+  nav {
+    order: 2
+  };
+
+  .primary-navigation {
+    margin-block: 2rem;
+    padding-inline: 5rem;
+  }
+}
+
+@media (min-width: 35rem) {
+  .primary-navigation {
+    padding-inline: clamp(3rem, 5vw, 7rem);
+  }
+}
+
+@media (min-width: 382px) {
+  .logo {
+    min-width: 100px;
+  }
+}

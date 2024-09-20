@@ -1,0 +1,5 @@
+Index.css is for global styles and varibles
+App.css is solely for styling App.jsx
+
+Index - varibles and general styles
+App - Specific styles
