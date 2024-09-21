@@ -39,11 +39,30 @@ export default function Members() {
           </Link>
         </div> */}
 
-      <Wrestler mainImage={BretHart} name="Bret Hart" nickname="The Hitman"/>
-      <Wrestler mainImage={OwenHart} name="Owen Hart" nickname="The King of Harts"/>
-      <Wrestler mainImage={NeidHart} name="Jim Neidhart" nickname="The Anvil"/>
-      <Wrestler mainImage={DaveyBoy} name="Davey Boy Smith" nickname="British Bulldog"/>
-      
+      <Wrestler
+        mainImage={BretHart}
+        name="Bret Hart"
+        nickname="The Hitman"
+        summary="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nihil excepturi non voluptas sed vero aut alias, explicabo pariatur velit soluta facere, ut odit nemo inventore. Dolorum cum expedita ducimus tempore accusantium. Cupiditate enim dolorem corrupti voluptatum, corporis soluta architecto modi hic debitis fuga fugiat quos optio. A, rem minima."
+      />
+      <Wrestler
+        mainImage={OwenHart}
+        name="Owen Hart"
+        nickname="The King of Harts"
+        summary="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nihil excepturi non voluptas sed vero aut alias, explicabo pariatur velit soluta facere, ut odit nemo inventore. Dolorum cum expedita ducimus tempore accusantium. Cupiditate enim dolorem corrupti voluptatum, corporis soluta architecto modi hic debitis fuga fugiat quos optio. A, rem minima."
+      />
+      <Wrestler 
+        mainImage={NeidHart} 
+        name="Jim Neidhart" 
+        nickname="The Anvil" 
+        summary="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nihil excepturi non voluptas sed vero aut alias, explicabo pariatur velit soluta facere, ut odit nemo inventore. Dolorum cum expedita ducimus tempore accusantium. Cupiditate enim dolorem corrupti voluptatum, corporis soluta architecto modi hic debitis fuga fugiat quos optio. A, rem minima."
+      />
+      <Wrestler
+        mainImage={DaveyBoy}
+        name="Davey Boy Smith"
+        nickname="British Bulldog"
+        summary="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nihil excepturi non voluptas sed vero aut alias, explicabo pariatur velit soluta facere, ut odit nemo inventore. Dolorum cum expedita ducimus tempore accusantium. Cupiditate enim dolorem corrupti voluptatum, corporis soluta architecto modi hic debitis fuga fugiat quos optio. A, rem minima."
+      />
     </main>
   );
 }

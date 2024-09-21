@@ -1,0 +1,26 @@
+.not-active {
+    display: none;
+}
+
+.dots {
+    margin: 2rem 0;
+}
+
+.history-text {
+    line-height: 1.7;
+    
+}
+
+.history-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.history-desc h1 {
+    text-align: center;
+}
+
+.history-desc h4 {
+    text-align: right;
+}
