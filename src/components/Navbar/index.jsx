@@ -21,7 +21,6 @@ export default function Navbar() {
       <div className="img-container flex">
         <img src={HartLogo} alt="WWE Logo" width={100} className="logo" />
       </div>
-      {/* Find hamburge icon for open and close */}
       <button
         onClick={toggleDisplay}
         className={`mobile-nav-toggle ${
@@ -34,7 +33,6 @@ export default function Navbar() {
         </span>
       </button>
       <nav>
-        {/* Move active class and logic to link directly to fix active tab bug */}
         <ul
           id="primary-navigation"
           className={`primary-navigation underline-indicators flex ${
@@ -42,22 +40,25 @@ export default function Navbar() {
           }`}
         >
           <li
-            onClick={() => toggleTab(1)}
             className={`${active === 1 ? "active" : ""}`}
           >
-            <Link to="/" className="uppercase text-white letter-spacing-2"><span>00</span>Home</Link>
+            <Link onClick={() => {
+              toggleTab(1) 
+              toggleDisplay()}} to="/" className="uppercase text-white letter-spacing-2"><span>00</span>Home</Link>
           </li>
           <li
-            onClick={() => toggleTab(2)}
             className={`${active === 2 ? "active" : ""}`}
           >
-            <Link to="/members" className="uppercase text-white letter-spacing-2"><span>01</span>Members</Link>
+            <Link onClick={() => {
+              toggleTab(2) 
+              toggleDisplay()}} to="/members" className="uppercase text-white letter-spacing-2"><span>01</span>Members</Link>
           </li>
           <li
-            onClick={() => toggleTab(3)}
             className={`${active === 3 ? "active" : ""}`}
           >
-            <Link to="/history" className="uppercase text-white letter-spacing-2"><span>02</span>History</Link>
+            <Link onClick={() => {
+              toggleTab(3) 
+              toggleDisplay()}} to="/history" className="uppercase text-white letter-spacing-2"><span>02</span>History</Link>
           </li>
         </ul>
       </nav>

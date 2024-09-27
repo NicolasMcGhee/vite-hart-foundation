@@ -22,7 +22,10 @@ export default function History() {
     <div className="container ff-sans-norm letter-spacing-3 history-text">
       <div className={`${toggle === 1 ? "active history-desc" : "not-active"}`}>
         <img src={HartStart} />
-        <h4>Hart Start With Jimmy Hart (No Relation)</h4>
+        <div>
+          <h4>Hart Start With Jimmy Hart (No Relation)</h4>
+        </div>
+        
         <h1>80s: FORMATION</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit non
